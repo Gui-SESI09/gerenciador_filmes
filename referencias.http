@@ -1,16 +1,18 @@
 ###
-GET http://localhost:3000/usuarios
+GET http://localhost:3000/filmes
 
 ###
-POST http://localhost:3000/usuarios
+POST http://localhost:3000/filmes
 Content-Type: application/json
 
 {
- "nome": "Vinicius",
- "senha": "12345"
+ "titulo": "Gremlins",
+ "genero": "Comédia",
+ "ano_lancamento": "1984",
+ "diretor": "Joe Dante"
 }
 ###
-PUT http://localhost:3000/usuarios/
+PUT http://localhost:3000/filmes/
 Content-Type: application/json
 
 {
@@ -18,4 +20,4 @@ Content-Type: application/json
  "senha": "leaf green"
 }
 ###
-DELETE http://localhost:3000/usuarios/
+DELETE http://localhost:3000/filmes/
